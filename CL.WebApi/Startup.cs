@@ -2,7 +2,9 @@ using CL.Data.Context;
 using CL.Data.Repository;
 using CL.Manager.Implementation;
 using CL.Manager.Interfaces;
+using CL.Manager.Mappings;
 using CL.Manager.Validator;
+using CL.WebApi.Configuration;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -16,6 +18,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -33,18 +36,18 @@ namespace CL.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers()
-                .AddFluentValidation(p => p.RegisterValidatorsFromAssemblyContaining<ClienteValidator>());
+            // Adicionar validações
+            services.AddControllers();
+
+            services.AddFluentValidationConfiguration();
+
+            services.AddAutoMapperConfiguration();
 
             services.AddDbContext<ClContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ClConnection")));
 
-            // Adicionar interfaces
-            services.AddScoped<IClienteRepository, ClienteRepository>();
-            services.AddScoped<IClienteManager, ClienteManager>();
+            services.AddDependencyInjectionConfiguration();
 
-            services.AddSwaggerGen(c => {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Consultório Legal", Version = "v1" }); // Pipeline
-            });
+            services.AddSwaggerConfiguration();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,12 +58,7 @@ namespace CL.WebApi
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseSwagger();
-
-            app.UseSwaggerUI(c => {
-                c.RoutePrefix = string.Empty; // Abre diretamente na página que for definida
-                c.SwaggerEndpoint("./swagger/v1/swagger.json", "CL V1"); // Endpoint: onde será disponibilizada a página (rota/nome doc)
-            });
+            app.UseSwaggerConfiguration();
 
             app.UseHttpsRedirection();
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CL.Core.Shared.ModelViews;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
@@ -14,5 +15,7 @@ namespace CL.Core.Domain
         public char Sexo { get; set; }
         public string Telefone { get; set; }
         public string Documento { get; set; }
+        public DateTime Criacao { get; set; }
+        public DateTime? UltimaAtualizacao { get; set; }
     }
 }

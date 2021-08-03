@@ -1,4 +1,5 @@
 ﻿using CL.Core.Domain;
+using CL.Core.Shared.ModelViews;
 using CL.Manager.Interfaces;
 using CL.Manager.Validator;
 using Microsoft.AspNetCore.Mvc;
@@ -37,7 +38,7 @@ namespace CL.WebApi.Controllers
 
         // POST api/<ClientesController>
         [HttpPost]
-        public async Task<IActionResult> Post(Cliente cliente)
+        public async Task<IActionResult> Post(NovoCliente novoCliente)
         {
             //ClienteValidator validator = new ClienteValidator();
             //var validation = validator.Validate(cliente);
@@ -49,17 +50,17 @@ namespace CL.WebApi.Controllers
             //{
             //    return BadRequest(validation.ToString());
             //}
-            var clienteInserido = await clienteManager.InsertClienteAsync(cliente);
-                return CreatedAtAction(nameof(Get), new { Id_Cliente = cliente.Id_Cliente }, cliente);
+            var clienteInserido = await clienteManager.InsertClienteAsync(novoCliente);
+                return CreatedAtAction(nameof(Get), new { Id_Cliente = clienteInserido.Id_Cliente }, clienteInserido);
 
 
         }
 
         // PUT api/<ClientesController>/5
         [HttpPut]
-        public async Task<IActionResult> Put(Cliente cliente)
+        public async Task<IActionResult> Put(AlteraCliente alteraCliente)
         {
-            var clienteAtualizado = await clienteManager.UpdateClienteAsync(cliente);
+            var clienteAtualizado = await clienteManager.UpdateClienteAsync(alteraCliente);
             if (clienteAtualizado == null)
             {
                 return NotFound();
