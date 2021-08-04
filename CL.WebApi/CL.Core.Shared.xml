@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CL.Core.Shared</name>
+    </assembly>
+    <members>
+        <member name="P:CL.Core.Shared.ModelViews.AlteraCliente.Id_Cliente">
+            <summary>
+            Objeto utilizado para alterar um cliente existente.
+            </summary>
+        </member>
+        <member name="T:CL.Core.Shared.ModelViews.NovoCliente">
+            <summary>
+            Objeto utilizado para a inserção de um novo cliente.
+            </summary>
+        </member>
+        <member name="P:CL.Core.Shared.ModelViews.NovoCliente.Nome_Cliente">
+            <summary>
+            Nome do cliente
+            </summary>
+            <example>Maria das Graças Ferreira</example>
+        </member>
+        <member name="P:CL.Core.Shared.ModelViews.NovoCliente.DataNascimento">
+            <summary>
+            Data de nascimento do cliente
+            </summary>
+            <example>1980-01-01</example>
+        </member>
+        <member name="P:CL.Core.Shared.ModelViews.NovoCliente.Sexo">
+            <example>F</example>
+        </member>
+        <member name="P:CL.Core.Shared.ModelViews.NovoCliente.Telefone">
+            <example>16999995999</example>
+        </member>
+        <member name="P:CL.Core.Shared.ModelViews.NovoCliente.Documento">
+            <summary>
+            Documentos aceitos: CNH / RG
+            </summary>
+            <example>559999997</example>
+        </member>
+    </members>
+</doc>

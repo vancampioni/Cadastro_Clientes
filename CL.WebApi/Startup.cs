@@ -43,7 +43,7 @@ namespace CL.WebApi
 
             services.AddAutoMapperConfiguration();
 
-            services.AddDbContext<ClContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ClConnection")));
+            services.AddDataBaseConfiguration(Configuration);
 
             services.AddDependencyInjectionConfiguration();
 
@@ -57,6 +57,8 @@ namespace CL.WebApi
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseDataBaseConfiguration();
 
             app.UseSwaggerConfiguration();
 
