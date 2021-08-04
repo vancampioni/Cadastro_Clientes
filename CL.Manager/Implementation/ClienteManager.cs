@@ -2,6 +2,7 @@
 using CL.Core.Domain;
 using CL.Core.Shared.ModelViews;
 using CL.Manager.Interfaces;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -13,11 +14,13 @@ namespace CL.Manager.Implementation
     {
         private readonly IClienteRepository clienteRepository;
         private readonly IMapper mapper;
+        private readonly ILogger logger;
 
-        public ClienteManager(IClienteRepository clienteRepository, IMapper mapper) //Injeção de dependência
+        public ClienteManager(IClienteRepository clienteRepository, IMapper mapper, ILogger<ClienteManager> logger) //Injeção de dependência
         {
             this.clienteRepository = clienteRepository;
             this.mapper = mapper;
+            this.logger = logger;
         }
 
         // Réplica para a classe de negócio
@@ -33,6 +36,7 @@ namespace CL.Manager.Implementation
 
         public async Task<Cliente> InsertClienteAsync(NovoCliente novoCliente)
         {
+            logger.LogInformation("Chamada de negócio para inserir um cliente");
             var cliente = mapper.Map<Cliente>(novoCliente);
             return await clienteRepository.InsertClienteAsync(cliente);
         }

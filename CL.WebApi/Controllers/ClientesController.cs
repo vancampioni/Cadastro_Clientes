@@ -4,6 +4,8 @@ using CL.Manager.Interfaces;
 using CL.Manager.Validator;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using SerilogTimings;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,9 +20,12 @@ namespace CL.WebApi.Controllers
     public class ClientesController : ControllerBase
     {
         private readonly IClienteManager clienteManager;
-        public ClientesController(IClienteManager clienteManager)
+        private readonly ILogger<ClientesController> logger;
+
+        public ClientesController(IClienteManager clienteManager, ILogger<ClientesController> logger)
         {
             this.clienteManager = clienteManager;
+            this.logger = logger;
         }
 
         /// <summary>
@@ -32,6 +37,7 @@ namespace CL.WebApi.Controllers
         [ProducesResponseType(typeof(ProblemDetails),StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Get()
         {
+            throw new Exception("Erro de teste");
             return Ok(await clienteManager.GetClientesAsync());
         }
 
@@ -57,18 +63,25 @@ namespace CL.WebApi.Controllers
         [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Post(NovoCliente novoCliente)
         {
-            //ClienteValidator validator = new ClienteValidator();
-            //var validation = validator.Validate(cliente);
-            //if (validation.IsValid)
-            //{
-            //    var clienteInserido = await clienteManager.InsertClienteAsync(cliente);
-            //    return CreatedAtAction(nameof(Get), new { Id_Cliente = cliente.Id_Cliente }, cliente);
-            //} else
-            //{
-            //    return BadRequest(validation.ToString());
-            //}
-            var clienteInserido = await clienteManager.InsertClienteAsync(novoCliente);
-                return CreatedAtAction(nameof(Get), new { Id_Cliente = clienteInserido.Id_Cliente }, clienteInserido);
+            logger.LogInformation("Objeto recebido {@novoCliente}", novoCliente);
+
+            Cliente clienteInserido;
+            using (Operation.Time("Tempo de inclusão de um novo cliente"))
+            {
+                logger.LogInformation("Foi requisitada a inserção de um novo cliente");
+                //ClienteValidator validator = new ClienteValidator();
+                //var validation = validator.Validate(cliente);
+                //if (validation.IsValid)
+                //{
+                //    var clienteInserido = await clienteManager.InsertClienteAsync(cliente);
+                //    return CreatedAtAction(nameof(Get), new { Id_Cliente = cliente.Id_Cliente }, cliente);
+                //} else
+                //{
+                //    return BadRequest(validation.ToString());
+                //}
+                clienteInserido = await clienteManager.InsertClienteAsync(novoCliente);
+            }
+            return CreatedAtAction(nameof(Get), new { Id_Cliente = clienteInserido.Id_Cliente }, clienteInserido);
         }
 
         /// <summary>

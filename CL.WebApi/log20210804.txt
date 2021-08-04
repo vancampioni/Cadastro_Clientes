@@ -1,0 +1,797 @@
+2021-08-04 13:19:01.614 -03:00 [INF] Iniciando o WebApi
+2021-08-04 13:19:05.587 -03:00 [INF] Entity Framework Core 5.0.8 initialized 'ClContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-08-04 13:19:15.216 -03:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2021-08-04 13:19:15.294 -03:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2021-08-04 13:19:15.300 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2021-08-04 13:19:15.302 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2021-08-04 13:19:15.354 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2021-08-04 13:19:15.395 -03:00 [INF] No migrations were applied. The database is already up to date.
+2021-08-04 13:19:15.397 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2021-08-04 13:19:15.452 -03:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2021-08-04 13:19:15.782 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-08-04 13:19:15.783 -03:00 [INF] Hosting environment: Development
+2021-08-04 13:19:15.784 -03:00 [INF] Content root path: C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi
+2021-08-04 13:19:15.878 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/index.html  
+2021-08-04 13:19:16.116 -03:00 [INF] Request finished in 246.5067ms 200 text/html;charset=utf-8
+2021-08-04 13:19:16.648 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/swagger/v1/swagger.json  
+2021-08-04 13:19:16.851 -03:00 [INF] Request finished in 203.4525ms 200 application/json;charset=utf-8
+2021-08-04 13:22:05.403 -03:00 [INF] Iniciando o WebApi
+2021-08-04 13:22:08.748 -03:00 [INF] Entity Framework Core 5.0.8 initialized 'ClContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-08-04 13:22:09.642 -03:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2021-08-04 13:22:09.928 -03:00 [INF] Executed DbCommand (270ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2021-08-04 13:22:09.932 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2021-08-04 13:22:09.934 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2021-08-04 13:22:09.976 -03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2021-08-04 13:22:10.012 -03:00 [INF] No migrations were applied. The database is already up to date.
+2021-08-04 13:22:10.014 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2021-08-04 13:22:11.134 -03:00 [INF] Executed DbCommand (1,118ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2021-08-04 13:22:11.524 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-08-04 13:22:11.526 -03:00 [INF] Hosting environment: Development
+2021-08-04 13:22:11.527 -03:00 [INF] Content root path: C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi
+2021-08-04 13:22:11.627 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/index.html  
+2021-08-04 13:22:11.811 -03:00 [INF] Request finished in 198.9107ms 200 text/html;charset=utf-8
+2021-08-04 13:22:12.140 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/swagger/v1/swagger.json  
+2021-08-04 13:22:12.456 -03:00 [INF] Request finished in 316.8914ms 200 application/json;charset=utf-8
+2021-08-04 13:22:28.377 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:22:28.427 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:22:28.474 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:22:28.720 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 240.1354ms
+2021-08-04 13:22:28.722 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:22:28.723 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:22:28.900 -03:00 [INF] Request finished in 523.0753ms 500 text/plain
+2021-08-04 13:23:10.564 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:10.567 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:10.568 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:10.571 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 3.2101ms
+2021-08-04 13:23:10.572 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:10.572 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:10.576 -03:00 [INF] Request finished in 11.607ms 500 text/plain
+2021-08-04 13:23:10.810 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:10.812 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:10.812 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:10.817 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 4.6624ms
+2021-08-04 13:23:10.817 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:10.817 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:10.822 -03:00 [INF] Request finished in 11.8701ms 500 text/plain
+2021-08-04 13:23:10.986 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:10.987 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:10.989 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:10.991 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 1.5312ms
+2021-08-04 13:23:10.991 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:10.991 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:10.995 -03:00 [INF] Request finished in 9.4062ms 500 text/plain
+2021-08-04 13:23:11.152 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:11.152 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:11.152 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:11.155 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 2.4553ms
+2021-08-04 13:23:11.159 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:11.161 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:11.170 -03:00 [INF] Request finished in 17.3377ms 500 text/plain
+2021-08-04 13:23:11.318 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:11.319 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:11.320 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:11.321 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 1.4057ms
+2021-08-04 13:23:11.322 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:11.326 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:11.329 -03:00 [INF] Request finished in 10.9415ms 500 text/plain
+2021-08-04 13:23:11.486 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:11.486 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:11.486 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:11.487 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 0.5526ms
+2021-08-04 13:23:11.487 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:11.487 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:11.495 -03:00 [INF] Request finished in 8.9917ms 500 text/plain
+2021-08-04 13:23:11.683 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:11.684 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:11.684 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:11.686 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 1.1867ms
+2021-08-04 13:23:11.687 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:11.687 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:11.700 -03:00 [INF] Request finished in 16.9386ms 500 text/plain
+2021-08-04 13:23:11.852 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:11.853 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:11.854 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:11.857 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 2.5482ms
+2021-08-04 13:23:11.857 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:11.858 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:11.862 -03:00 [INF] Request finished in 9.949ms 500 text/plain
+2021-08-04 13:23:12.041 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:12.042 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:12.042 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:12.043 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 0.6722ms
+2021-08-04 13:23:12.043 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:12.044 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:12.045 -03:00 [INF] Request finished in 4.2831ms 500 text/plain
+2021-08-04 13:23:12.198 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:12.199 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:12.200 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:12.201 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 1.0724ms
+2021-08-04 13:23:12.202 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:12.202 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:12.212 -03:00 [INF] Request finished in 13.1603ms 500 text/plain
+2021-08-04 13:23:12.398 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:12.399 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:12.400 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:12.401 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 0.8655ms
+2021-08-04 13:23:12.401 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:12.401 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:12.405 -03:00 [INF] Request finished in 5.7786ms 500 text/plain
+2021-08-04 13:23:12.541 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:12.542 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:12.542 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:12.544 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 2.4ms
+2021-08-04 13:23:12.545 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:12.545 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:12.547 -03:00 [INF] Request finished in 6.0918ms 500 text/plain
+2021-08-04 13:23:12.719 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:12.719 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:12.719 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:12.720 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 0.4813ms
+2021-08-04 13:23:12.720 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:12.720 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:12.726 -03:00 [INF] Request finished in 6.7596ms 500 text/plain
+2021-08-04 13:23:12.903 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:12.903 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:12.905 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:12.910 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 3.9265ms
+2021-08-04 13:23:12.911 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:12.912 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:12.916 -03:00 [INF] Request finished in 13.4545ms 500 text/plain
+2021-08-04 13:23:13.099 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:13.100 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:13.100 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:13.102 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 1.037ms
+2021-08-04 13:23:13.102 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:13.102 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:13.109 -03:00 [INF] Request finished in 9.7434ms 500 text/plain
+2021-08-04 13:23:13.254 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:13.255 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:13.256 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:13.258 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 1.6294ms
+2021-08-04 13:23:13.259 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:13.259 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:13.264 -03:00 [INF] Request finished in 9.8995ms 500 text/plain
+2021-08-04 13:23:13.455 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:13.456 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:13.457 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:13.460 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 1.7897ms
+2021-08-04 13:23:13.460 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:13.460 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:13.462 -03:00 [INF] Request finished in 7.7447ms 500 text/plain
+2021-08-04 13:23:13.727 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:13.728 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:13.728 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:13.729 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 1.1175ms
+2021-08-04 13:23:13.730 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:13.730 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:13.733 -03:00 [INF] Request finished in 5.6265ms 500 text/plain
+2021-08-04 13:23:14.003 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:14.004 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:14.006 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:14.011 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 3.7096ms
+2021-08-04 13:23:14.011 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:14.011 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:14.014 -03:00 [INF] Request finished in 11.5434ms 500 text/plain
+2021-08-04 13:23:14.167 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:14.168 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:14.168 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:14.169 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 0.7766ms
+2021-08-04 13:23:14.169 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:14.169 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:14.177 -03:00 [INF] Request finished in 10.1946ms 500 text/plain
+2021-08-04 13:23:14.352 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:14.352 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:14.353 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:14.354 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 0.9594ms
+2021-08-04 13:23:14.354 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:14.355 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:14.363 -03:00 [INF] Request finished in 11.5218ms 500 text/plain
+2021-08-04 13:23:14.548 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:14.548 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:14.549 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:14.550 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 0.8387ms
+2021-08-04 13:23:14.550 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:14.550 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:14.552 -03:00 [INF] Request finished in 4.4794ms 500 text/plain
+2021-08-04 13:23:14.731 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:14.731 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:14.731 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:14.732 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 0.461ms
+2021-08-04 13:23:14.732 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:14.732 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:14.735 -03:00 [INF] Request finished in 4.746ms 500 text/plain
+2021-08-04 13:23:14.898 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:14.898 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:14.899 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:14.900 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 1.3555ms
+2021-08-04 13:23:14.901 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:14.901 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:14.905 -03:00 [INF] Request finished in 7.6193ms 500 text/plain
+2021-08-04 13:23:15.081 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:15.081 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:15.081 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:15.083 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 1.4398ms
+2021-08-04 13:23:15.083 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:15.083 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:15.086 -03:00 [INF] Request finished in 5.5122ms 500 text/plain
+2021-08-04 13:23:15.289 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:15.291 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:15.292 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:15.295 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 1.3614ms
+2021-08-04 13:23:15.295 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:15.296 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:15.299 -03:00 [INF] Request finished in 9.8471ms 500 text/plain
+2021-08-04 13:23:15.432 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:15.434 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:15.434 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:15.435 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 0.6824ms
+2021-08-04 13:23:15.435 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:15.435 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:15.439 -03:00 [INF] Request finished in 6.6749ms 500 text/plain
+2021-08-04 13:23:15.627 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:15.628 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:15.629 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:15.630 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 1.2091ms
+2021-08-04 13:23:15.630 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:15.631 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:15.633 -03:00 [INF] Request finished in 5.5149ms 500 text/plain
+2021-08-04 13:23:15.814 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:15.814 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:15.815 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:15.815 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 0.7766ms
+2021-08-04 13:23:15.816 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:15.816 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:15.819 -03:00 [INF] Request finished in 4.7944ms 500 text/plain
+2021-08-04 13:23:15.998 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:15.998 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:15.999 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:16.000 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 0.8095ms
+2021-08-04 13:23:16.000 -03:00 [INF] Executed endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:16.000 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Error de teste
+   at CL.WebApi.Controllers.ClientesController.Get() in C:\Users\vanessa.campioni\source\repos\Consultorio_Legal\CL.WebApi\Controllers\ClientesController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-08-04 13:23:16.003 -03:00 [INF] Request finished in 4.8872ms 500 text/plain
+2021-08-04 13:23:16.196 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44319/api/Clientes  
+2021-08-04 13:23:16.196 -03:00 [INF] Executing endpoint 'CL.WebApi.Controllers.ClientesController.Get (CL.WebApi)'
+2021-08-04 13:23:16.197 -03:00 [INF] Route matched with {action = "Get", controller = "Clientes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller CL.WebApi.Controllers.ClientesController (CL.WebApi).
+2021-08-04 13:23:16.197 -03:00 [INF] Executed action CL.WebApi.Controllers.ClientesController.Get (CL.WebApi) in 0.7582ms
