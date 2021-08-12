@@ -14,14 +14,10 @@ namespace CL.Manager.Validator
             RuleFor(x => x.Nome_Cliente).NotNull().NotEmpty().MinimumLength(10).MaximumLength(150);
             RuleFor(x => x.DataNascimento).NotNull().NotEmpty().LessThan(DateTime.Now).GreaterThan(DateTime.Now.AddYears(-130));
             RuleFor(x => x.Documento).NotNull().NotEmpty().MinimumLength(4).MaximumLength(14);
-            RuleFor(x => x.Telefone).NotNull().NotEmpty().Matches("[2-9][0-9]{10}").WithMessage("O telefone tem que ter o formato [2-9]");
-            RuleFor(x => x.Sexo).NotNull().NotEmpty().Must(IsMOrF).WithMessage("Esse campo deve ser preenchido com 'M' ou 'F'.");
-
+            RuleFor(x => x.Telefones).NotNull().NotEmpty();
+            RuleFor(x => x.Sexo).NotNull();
+            RuleFor(x => x.Endereco).SetValidator(new NovoEnderecoValidator());
         }
 
-        private bool IsMOrF(char sexo)
-        {
-            return sexo == 'M' || sexo == 'F';
-        }
     }
 }

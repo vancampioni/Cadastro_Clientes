@@ -4,7 +4,7 @@
         <name>CL.Core.Shared</name>
     </assembly>
     <members>
-        <member name="P:CL.Core.Shared.ModelViews.AlteraCliente.Id_Cliente">
+        <member name="P:CL.Core.Shared.ModelViews.AlteraCliente.Id">
             <summary>
             Objeto utilizado para alterar um cliente existente.
             </summary>
@@ -29,14 +29,29 @@
         <member name="P:CL.Core.Shared.ModelViews.NovoCliente.Sexo">
             <example>F</example>
         </member>
-        <member name="P:CL.Core.Shared.ModelViews.NovoCliente.Telefone">
-            <example>16999995999</example>
-        </member>
         <member name="P:CL.Core.Shared.ModelViews.NovoCliente.Documento">
             <summary>
             Documentos aceitos: CNH / RG
             </summary>
-            <example>559999997</example>
+            <example>5599999979</example>
+        </member>
+        <member name="P:CL.Core.Shared.ModelViews.NovoEndereco.CEP">
+            <example>49000000</example>
+        </member>
+        <member name="P:CL.Core.Shared.ModelViews.NovoEndereco.Cidade">
+            <example>Franca</example>
+        </member>
+        <member name="P:CL.Core.Shared.ModelViews.NovoEndereco.Logradouro">
+            <example>Rua A</example>
+        </member>
+        <member name="P:CL.Core.Shared.ModelViews.NovoEndereco.Numero">
+            <example>15</example>
+        </member>
+        <member name="P:CL.Core.Shared.ModelViews.NovoEndereco.Complemento">
+            <example>Na rua de cima do posto de combustível</example>
+        </member>
+        <member name="P:CL.Core.Shared.ModelViews.NovoTelefone.Numero">
+            <example>169999959999</example>
         </member>
     </members>
 </doc>

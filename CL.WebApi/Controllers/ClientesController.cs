@@ -34,12 +34,18 @@ namespace CL.WebApi.Controllers
 
         [HttpGet]
         [ProducesResponseType(typeof(Cliente),StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(Cliente),StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(ProblemDetails),StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Get()
         {
-            throw new Exception("Erro de teste");
-            return Ok(await clienteManager.GetClientesAsync());
+            var clientes = await clienteManager.GetClientesAsync();
+            if (clientes.Any())
+            {
+                return Ok(clientes);
+            }
+            return NotFound();
         }
+        
 
         /// <summary>
         /// Retorna um cliente consultado pelo Id
@@ -81,7 +87,7 @@ namespace CL.WebApi.Controllers
                 //}
                 clienteInserido = await clienteManager.InsertClienteAsync(novoCliente);
             }
-            return CreatedAtAction(nameof(Get), new { Id_Cliente = clienteInserido.Id_Cliente }, clienteInserido);
+            return CreatedAtAction(nameof(Get), new { ClienteId = clienteInserido.ClienteId }, clienteInserido);
         }
 
         /// <summary>

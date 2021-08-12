@@ -14,7 +14,10 @@ namespace CL.Manager.Mappings
             CreateMap<NovoCliente, Cliente>() // Parâmetros: objeto de oriegm - objeto de destino
                 .ForMember(d => d.Criacao, o => o.MapFrom(x => DateTime.Now)) // Add data da criação
                 .ForMember(d => d.DataNascimento, o => o.MapFrom(x => x.DataNascimento.Date)); // Pegar a data sem a hora
-                //ReverseMap(); quando quiser fazer de Cliente para NovoCliente
+                                                                                               //ReverseMap(); quando quiser fazer de Cliente para NovoCliente
+
+            CreateMap<NovoEndereco, Endereco>();
+            CreateMap<NovoTelefone, Telefone>();
         }
     }
 }

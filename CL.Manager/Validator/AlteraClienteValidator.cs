@@ -10,7 +10,7 @@ namespace CL.Manager.Validator
     {
         public AlteraClienteValidator()
         {
-            RuleFor(p => p.Id_Cliente).NotNull().NotEmpty().GreaterThan(0); // Validação para o Id (que é o diferencial)
+            RuleFor(p => p.Id).NotNull().NotEmpty().GreaterThan(0); // Validação para o Id (que é o diferencial)
             Include(new NovoClienteValidator()); // Chama o construtor para reutilizar as validações de NovoClienteValidator
         }
     }

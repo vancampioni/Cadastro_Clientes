@@ -4,19 +4,21 @@ using CL.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CL.Data.Migrations
 {
     [DbContext(typeof(ClContext))]
-    partial class ClContextModelSnapshot : ModelSnapshot
+    [Migration("20210810121351_add-endereco")]
+    partial class addendereco
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.9")
+                .HasAnnotation("ProductVersion", "5.0.8")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("CL.Core.Domain.Cliente", b =>
@@ -42,6 +44,9 @@ namespace CL.Data.Migrations
 
                     b.Property<string>("Sexo")
                         .IsRequired()
+                        .HasColumnType("nvarchar(1)");
+
+                    b.Property<string>("Telefone")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("UltimaAtualizacao")
@@ -67,7 +72,6 @@ namespace CL.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Estado")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Logradouro")
@@ -81,19 +85,6 @@ namespace CL.Data.Migrations
                     b.ToTable("Enderecos");
                 });
 
-            modelBuilder.Entity("CL.Core.Domain.Telefone", b =>
-                {
-                    b.Property<int>("ClienteId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Numero")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("ClienteId", "Numero");
-
-                    b.ToTable("Telefones");
-                });
-
             modelBuilder.Entity("CL.Core.Domain.Endereco", b =>
                 {
                     b.HasOne("CL.Core.Domain.Cliente", "Cliente")
@@ -105,22 +96,9 @@ namespace CL.Data.Migrations
                     b.Navigation("Cliente");
                 });
 
-            modelBuilder.Entity("CL.Core.Domain.Telefone", b =>
-                {
-                    b.HasOne("CL.Core.Domain.Cliente", "Cliente")
-                        .WithMany("Telefones")
-                        .HasForeignKey("ClienteId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Cliente");
-                });
-
             modelBuilder.Entity("CL.Core.Domain.Cliente", b =>
                 {
                     b.Navigation("Endereco");
-
-                    b.Navigation("Telefones");
                 });
 #pragma warning restore 612, 618
         }

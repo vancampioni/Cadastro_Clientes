@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace CL.Core.Shared.ModelViews
 {
@@ -22,15 +21,16 @@ namespace CL.Core.Shared.ModelViews
         public DateTime DataNascimento { get; set; }
 
         /// <example>F</example>
-        public char Sexo { get; set; }
-
-        /// <example>16999995999</example>
-        public string Telefone { get; set; }
+        public SexoView Sexo { get; set; }
 
         /// <summary>
         /// Documentos aceitos: CNH / RG
         /// </summary>
-        /// <example>559999997</example>
+        /// <example>5599999979</example>
         public string Documento { get; set; }
+
+        public NovoEndereco Endereco { get; set; }
+
+        public ICollection<NovoTelefone> Telefones { get; set; }
     }
 }
