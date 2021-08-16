@@ -1,6 +1,9 @@
 ﻿using AutoMapper;
 using CL.Core.Domain;
 using CL.Core.Shared.ModelViews;
+using CL.Core.Shared.ModelViews.Cliente;
+using CL.Core.Shared.ModelViews.Endereco;
+using CL.Core.Shared.ModelViews.Telefone;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -18,6 +21,9 @@ namespace CL.Manager.Mappings
 
             CreateMap<NovoEndereco, Endereco>();
             CreateMap<NovoTelefone, Telefone>();
+            CreateMap<Cliente, ClienteView>();
+            CreateMap<Endereco, EnderecoView>();
+            CreateMap<Telefone, TelefoneView>();
         }
     }
 }

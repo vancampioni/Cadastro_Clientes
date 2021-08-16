@@ -34,7 +34,7 @@ namespace CL.Data.Repository
             return await context.Clientes
                 .Include(p => p.Endereco)
                 .Include(p => p.Telefones)
-                .SingleOrDefaultAsync(p => p.ClienteId == Id); // Não precisa da função lambda
+                .SingleOrDefaultAsync(p => p.ClienteId == Id);
         }
 
         //Insert
@@ -61,9 +61,9 @@ namespace CL.Data.Repository
         }
 
         //Delete
-        public async Task DeleteClienteAsync(int Id_Cliente) //Não usa Task<Cliente> pq não tem que retornar nada
+        public async Task DeleteClienteAsync(int Id) //Não usa Task<Cliente> pq não tem que retornar nada
         {
-            var clienteConsultado = await context.Clientes.FindAsync(Id_Cliente);
+            var clienteConsultado = await context.Clientes.FindAsync(Id);
             context.Clientes.Remove(clienteConsultado);
             await context.SaveChangesAsync();
         }
