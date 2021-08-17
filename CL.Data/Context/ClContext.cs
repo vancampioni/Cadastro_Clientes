@@ -10,6 +10,7 @@ namespace CL.Data.Context
         public DbSet<Endereco> Enderecos { get; set; }
         public DbSet<Telefone> Telefones { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Funcao> Funcoes { get; set; }
 
         public ClContext(DbContextOptions options) : base(options)
         {

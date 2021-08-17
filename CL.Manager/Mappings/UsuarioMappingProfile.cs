@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using CL.Core.Domain;
 using CL.Core.Shared.ModelViews.Usuario;
+using CL.Manager.Implementation;
 
 namespace CL.Manager.Mappings
 {
@@ -9,6 +10,10 @@ namespace CL.Manager.Mappings
         public UsuarioMappingProfile()
         {
             CreateMap<Usuario, UsuarioView>().ReverseMap();
+            CreateMap<Usuario, NovoUsuario>().ReverseMap();
+            CreateMap<Usuario, UsuarioLogado>().ReverseMap();
+            CreateMap<Funcao, FuncaoView>().ReverseMap();
+            CreateMap<Funcao, ReferenciaFuncao>().ReverseMap();
         }
     }
 }

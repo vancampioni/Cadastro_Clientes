@@ -16,11 +16,12 @@ namespace CL.WebApi.Configuration
         public static void AddSwaggerConfiguration(this IServiceCollection services)
         {
             services.AddSwaggerGen(c => {
-                c.SwaggerDoc("v1", 
-                    new OpenApiInfo {
-                        Title = "Consultório Legal", 
+                c.SwaggerDoc("v1",
+                    new OpenApiInfo
+                    {
+                        Title = "Cadastro de Clientes",
                         Version = "v1",
-                        Description = "API da aplicação consultório legal.",
+                        Description = "API da aplicação de cadastro de clientes.",
                         Contact = new OpenApiContact //Informações de contato
                         {
                             Name = "Vanessa Campioni",
@@ -35,6 +36,27 @@ namespace CL.WebApi.Configuration
                         TermsOfService = new Uri("https://opensource.org/osd") //Os termos de uso que a empresa define para uso da aplicação
                     }); // Pipeline
 
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    In = ParameterLocation.Header,
+                    Description = "Insira o token",
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey
+                });
+
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement {
+                {
+                        new OpenApiSecurityScheme
+                        {
+                             Reference = new OpenApiReference
+                            {
+                                 Type = ReferenceType.SecurityScheme,
+                                 Id = "Bearer"
+                            }
+                        },
+                            new string[]{}
+                        }
+                });
                 //c.AddFluentValidationRules(); //Adicionar o FluentValidation
 
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
