@@ -1,4 +1,5 @@
-﻿namespace CL.Core.Shared.ModelViews.Usuario
+﻿
+namespace CL.Core.Shared.ModelViews.Usuario
 {
     public class FuncaoView
     {

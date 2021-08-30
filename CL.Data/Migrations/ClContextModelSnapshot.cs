@@ -21,7 +21,7 @@ namespace CL.Data.Migrations
 
             modelBuilder.Entity("CL.Core.Domain.Cliente", b =>
                 {
-                    b.Property<int>("ClienteId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -35,7 +35,7 @@ namespace CL.Data.Migrations
                     b.Property<string>("Documento")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Nome_Cliente")
+                    b.Property<string>("Nome")
                         .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
@@ -47,7 +47,7 @@ namespace CL.Data.Migrations
                     b.Property<DateTime?>("UltimaAtualizacao")
                         .HasColumnType("datetime2");
 
-                    b.HasKey("ClienteId");
+                    b.HasKey("Id");
 
                     b.ToTable("Clientes");
                 });

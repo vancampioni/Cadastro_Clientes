@@ -2,9 +2,8 @@
 {
     public class Telefone
     {
-        public int ClienteId { get; set; } // Chave composta
-        public string Numero { get; set; } // Chave composta
-        
-        public Cliente Cliente { get; set; } // O telefone pertence a um cliente
+        public int ClienteId { get; set; }
+        public string Numero { get; set; }
+        public Cliente Cliente { get; set; }
     }
 }

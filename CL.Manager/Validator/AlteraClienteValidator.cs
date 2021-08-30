@@ -1,8 +1,5 @@
-﻿using CL.Core.Shared.ModelViews;
+﻿using CL.Core.Shared.ModelViews.Cliente;
 using FluentValidation;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CL.Manager.Validator
 {
@@ -10,8 +7,8 @@ namespace CL.Manager.Validator
     {
         public AlteraClienteValidator()
         {
-            RuleFor(p => p.Id).NotNull().NotEmpty().GreaterThan(0); // Validação para o Id (que é o diferencial)
-            Include(new NovoClienteValidator()); // Chama o construtor para reutilizar as validações de NovoClienteValidator
+            RuleFor(p => p.Id).NotNull().NotEmpty().GreaterThan(0);
+            Include(new NovoClienteValidator());
         }
     }
 }

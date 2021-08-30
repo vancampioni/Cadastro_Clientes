@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using CL.Core.Domain;
 using CL.Core.Shared.ModelViews.Usuario;
-using CL.Manager.Implementation;
 
 namespace CL.Manager.Mappings
 {

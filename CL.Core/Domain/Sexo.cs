@@ -2,7 +2,7 @@
 {
     public enum Sexo
     {
-        F,
-        M
+        M,
+        F
     }
 }

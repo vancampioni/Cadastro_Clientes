@@ -47,7 +47,7 @@ namespace CL.Manager.Implementation
             usuario.Senha = passwordHasher.HashPassword(usuario, usuario.Senha);
         }
 
-        public async Task<UsuarioView> UpdateClienteAsync(Usuario usuario)
+        public async Task<UsuarioView> UpdateMedicoAsync(Usuario usuario)
         {
             ConverteSenhaEmHash(usuario);
             return mapper.Map<UsuarioView>(await repository.UpdateAsync(usuario));
@@ -60,7 +60,7 @@ namespace CL.Manager.Implementation
             {
                 return null;
             }
-            if(await ValidaEAtualizaHashAsync(usuario, usuarioConsultado.Senha))
+            if (await ValidaEAtualizaHashAsync(usuario, usuarioConsultado.Senha))
             {
                 var usuarioLogado = mapper.Map<UsuarioLogado>(usuarioConsultado);
                 usuarioLogado.Token = jwt.GerarToken(usuarioConsultado);
@@ -82,7 +82,7 @@ namespace CL.Manager.Implementation
                     return true;
 
                 case PasswordVerificationResult.SuccessRehashNeeded:
-                    await UpdateClienteAsync(usuario);
+                    await UpdateMedicoAsync(usuario);
                     return true;
 
                 default:

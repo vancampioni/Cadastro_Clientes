@@ -1,4 +1,5 @@
-﻿namespace CL.Manager.Implementation
+﻿
+namespace CL.Core.Shared.ModelViews.Usuario
 {
     public class ReferenciaFuncao
     {

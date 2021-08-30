@@ -20,5 +20,7 @@ namespace CL.Core.Shared.ModelViews.Cliente
         public DateTime? UltimaAtualizacao { get; set; }
 
         public EnderecoView Endereco { get; set; }
+
+       
     }
 }

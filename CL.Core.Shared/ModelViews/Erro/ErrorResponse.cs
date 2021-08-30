@@ -16,7 +16,7 @@ namespace CL.Core.Shared.ModelViews
         {
             Id = id;
             Data = DateTime.Now;
-            Mensagem = "Erro Inesperádo";
+            Mensagem = "Erro Inesperado";
         }
     }
 }

@@ -7,6 +7,6 @@ namespace CL.Core.Domain
         public int Id { get; set; }
         public string Descricao { get; set; }
 
-        public ICollection<Usuario> Usuarios { get; set; } // Um usuário pode ter muitas funções
+        public ICollection<Usuario> Usuarios { get; set; }
     }
 }

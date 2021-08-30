@@ -1,32 +1,38 @@
-﻿using System;
+﻿
+using CL.Core.Shared.ModelViews.Endereco;
+using CL.Core.Shared.ModelViews.Telefone;
+using System;
 using System.Collections.Generic;
 
-namespace CL.Core.Shared.ModelViews
+namespace CL.Core.Shared.ModelViews.Cliente
 {
     /// <summary>
-    /// Objeto utilizado para a inserção de um novo cliente.
+    /// Objeto utilizado para inserção de um novo cliente.
     /// </summary>
     public class NovoCliente
     {
         /// <summary>
         /// Nome do cliente
         /// </summary>
-        /// <example>Maria das Graças Ferreira</example>
-        public string Nome_Cliente { get; set; }
+        /// <example>João do Caminhão</example>
+        public string Nome { get; set; }
 
         /// <summary>
-        /// Data de nascimento do cliente
+        /// Data do nascimento do cliente.
         /// </summary>
         /// <example>1980-01-01</example>
         public DateTime DataNascimento { get; set; }
 
-        /// <example>F</example>
+        /// <summary>
+        /// Sexo do cliente
+        /// </summary>
+        /// <example>M</example>
         public SexoView Sexo { get; set; }
 
         /// <summary>
-        /// Documentos aceitos: CNH / RG
+        /// Documento do cliente: CNH, CPF, RG
         /// </summary>
-        /// <example>5599999979</example>
+        /// <example>12341231312</example>
         public string Documento { get; set; }
 
         public NovoEndereco Endereco { get; set; }

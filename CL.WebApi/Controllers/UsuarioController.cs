@@ -1,5 +1,5 @@
 ﻿using CL.Core.Domain;
-using CL.Manager.Implementation;
+using CL.Core.Shared.ModelViews.Usuario;
 using CL.Manager.Interfaces.Managers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -30,7 +30,7 @@ namespace CL.WebApi.Controllers
             return Unauthorized();
         }
 
-        [Authorize(Roles = "Presidente, Lider")] //Autoriza apenas quem mandar um token válido
+        [Authorize(Roles = "Presidente, Lider")]
         [HttpGet]
         public async Task<IActionResult> Get()
         {
