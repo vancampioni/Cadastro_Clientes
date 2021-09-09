@@ -18,7 +18,7 @@ namespace CL.WebApi.Controllers
             this.manager = manager;
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("Login")]
         public async Task<IActionResult> Login([FromBody] Usuario usuario)
         {
@@ -30,7 +30,7 @@ namespace CL.WebApi.Controllers
             return Unauthorized();
         }
 
-        [Authorize(Roles = "Presidente, Lider")]
+        
         [HttpGet]
         public async Task<IActionResult> Get()
         {
